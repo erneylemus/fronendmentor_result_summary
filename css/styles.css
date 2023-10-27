@@ -125,25 +125,25 @@ body{
 .row:nth-child(1){
  background-color: hsla(0, 100%, 67%,.2);
 }
-.row:nth-child(1) .badge b{
+.row:nth-child(1) span{
   color: var(--Light-red);
 }
 .row:nth-child(2){
   background-color: hsla(39, 100%, 67%,.2);
 }
-.row:nth-child(2) .badge b{
+.row:nth-child(2) span{
   color: var(--Orangey-yellow);
 }
 .row:nth-child(3){
   background-color: hsla(166, 100%, 56%,.2);
 }
-.row:nth-child(3) .badge b{
+.row:nth-child(3) span{
   color: var(--Green-teal);
 }
 .row:nth-child(4){
   background-color: hsla(234, 83%, 45%,.2);
 }
-.row:nth-child(4) .badge b{
+.row:nth-child(4) span{
   color: var(--Cobalt-blue);
 }
 
@@ -151,6 +151,7 @@ body{
   display: flex;
   align-items: flex-end;
 }
+
 
 .row p b{
   color: var(--Dark-gray-blue);
@@ -167,20 +168,22 @@ body{
   color: white;
 }
 
-@media screen and (max-widht: 650px) {
+@media screen and (max-width: 650px) {
   body{
-    align-items: flex-start;
     background-color: white;
+    min-height: 100vh;
   }
 
   .card{
     box-shadow: none;
   }
 
-  .card-container{
-    flex-direction: column;
+.container{
+  flex-direction: column;
   }
 }
+
+
 
 
 
